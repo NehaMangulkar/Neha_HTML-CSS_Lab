@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+
+body{
+    background: url('login2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.login-form{
+    width: 450px;
+    padding: 10px;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    border: 5px solid beige;
+}
+.login-form h4{
+    text-align: center;
+    color: white;
+    font-size: large;
+}
+
+.login-form input{
+    font-size: 16px;
+    border-radius: 5px;
+   margin-left: 130px;
+   padding: 8px;
+}
+
+.login-form input:hover{
+background-color: teal;
+opacity: 0.6;
+color : black
+}
+
+.buttonReset{
+  margin-top: 20px;
+  padding: 8px;
+  border: 2px solid #4CAF50;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+margin-left: 50%;
+}
+
+.buttonSubmit{
+    margin-top: 20px;
+  padding: 8px;
+  border: 2px solid #4CAF50;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+   
+
+}
+

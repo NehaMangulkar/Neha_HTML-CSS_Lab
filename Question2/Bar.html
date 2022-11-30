@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Bar chart</title>
+        <link rel="stylesheet" href="BarCss.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" charset="utf-8"></script>
+    </head>
+    <body>
+        
+        <div class ="chart">
+           
+        <ul class ="bars">
+            <li><div class ="bar" data-percentage="30"></div><span>30%</span></li>
+            <li><div class ="bar" data-percentage="40"></div><span>40%</span></li>
+            <li><div class ="bar" data-percentage="80"></div><span>80%</span></li>
+        </ul>
+        <h1>Bar Plot</h1>
+        </div>
+
+        <script  type="text/javascript">
+            $(function(){
+                $('.bars li .bar').each(function(key,bar){
+                    var percentage = $(this).data('percentage');
+                    $(this).animate({
+                        'height' :percentage + '%'
+                    },1000);
+
+                });
+            });
+
+        </script>
+
+    </body>
+</html>
